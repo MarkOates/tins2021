@@ -14,3 +14,9 @@ TEST(ProgramRunnerTest, run__returns_the_expected_response)
    std::string expected_string = "Hello World!";
    EXPECT_EQ(expected_string, program_runner.run());
 }
+
+TEST(DISABLED_ProgramRunnerTest, run__runs_the_application_controller)
+{
+   // no implementation of this test
+}
+

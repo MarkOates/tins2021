@@ -3,10 +3,15 @@ functions:
   - name: run
     type: std::string
     body: |
-      std::string text_to_output = "Hello World!";
-      std::cout << text_to_output << std::endl;
-      return text_to_output;
+      ApplicationController application_controller;
+      application_controller.run_program();
+      return "Hello World!";
     body_dependency_symbols:
       - std::cout
       - std::string
+      - ApplicationController
+
+dependencies:
+  - symbol: ApplicationController
+    headers: [ ApplicationController.hpp ]
 

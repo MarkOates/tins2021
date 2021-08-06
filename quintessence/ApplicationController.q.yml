@@ -1,4 +1,4 @@
 functions:
-  - name: run
+  - name: run_program
     type: std::string
     body: return "Hello World!";

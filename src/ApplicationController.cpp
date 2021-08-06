@@ -16,7 +16,7 @@ ApplicationController::~ApplicationController()
 }
 
 
-std::string ApplicationController::run()
+std::string ApplicationController::run_program()
 {
    return "Hello World!";
 }

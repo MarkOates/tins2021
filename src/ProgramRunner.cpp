@@ -3,6 +3,7 @@
 #include <ProgramRunner.hpp>
 #include <iostream>
 #include <string>
+#include <ApplicationController.hpp>
 
 
 
@@ -19,9 +20,9 @@ ProgramRunner::~ProgramRunner()
 
 std::string ProgramRunner::run()
 {
-   std::string text_to_output = "Hello World!";
-   std::cout << text_to_output << std::endl;
-   return text_to_output;
+   ApplicationController application_controller;
+   application_controller.run_program();
+   return "Hello World!";
 }
 
 

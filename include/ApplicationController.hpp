@@ -12,7 +12,7 @@ public:
    ApplicationController();
    ~ApplicationController();
 
-   std::string run();
+   std::string run_program();
 };
 
 
