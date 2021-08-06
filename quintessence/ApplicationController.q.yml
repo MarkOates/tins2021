@@ -1,4 +1,20 @@
 functions:
   - name: run_program
     type: std::string
-    body: return "Hello World!";
+    body: |
+      al_init();
+      ALLEGRO_DISPLAY *display = al_create_display(1920, 1080);
+      al_clear_to_color(al_color_name("green"));
+      al_flip_display();
+      sleep(1);
+      return "Hello World!";
+    body_dependency_symbols:
+      - al_init
+      - al_color_name
+
+dependencies:
+  - symbol: al_init
+    headers: [ allegro5/allegro.h ]
+  - symbol: al_color_name
+    headers: [ allegro5/allegro_color.h ]
+
