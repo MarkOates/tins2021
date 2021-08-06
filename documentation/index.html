@@ -82,18 +82,71 @@ table td
   <div class="component">
     <h3 id="quintessence/ApplicationController.q.yml">quintessence/ApplicationController.q.yml</h3>
      <table>
+<tr>
+  <td class="property">display</td>
+  <td class="property">ALLEGRO_DISPLAY*</td>
+</tr>
+<tr>
+  <td class="property">event_queue</td>
+  <td class="property">ALLEGRO_EVENT_QUEUE*</td>
+</tr>
+<tr>
+  <td class="property">primary_timer</td>
+  <td class="property">ALLEGRO_TIMER*</td>
+</tr>
+<tr>
+  <td class="property">user_event_source</td>
+  <td class="property">ALLEGRO_EVENT_SOURCE</td>
+</tr>
+<tr>
+  <td class="property">shutdown_program</td>
+  <td class="property">bool</td>
+</tr>
     </table>
      <table>
+<tr>
+  <td class="method">initialize_allegro_config_display_event_queue_and_timer()</td>
+</tr>
+<tr>
+  <td class="method">initialize()</td>
+</tr>
+<tr>
+  <td class="method">shutdown()</td>
+</tr>
+<tr>
+  <td class="method">emit_user_event(1)</td>
+</tr>
 <tr>
   <td class="method">run_program()</td>
 </tr>
+<tr>
+  <td class="method">run_event_loop()</td>
+</tr>
     </table>
      <table>
 <tr>
-  <td class="dependency">{&quot;symbol&quot;=&gt;&quot;al_init&quot;, &quot;headers&quot;=&gt;[&quot;allegro5/allegro.h&quot;]}</td>
+  <td class="dependency">{&quot;symbol&quot;=&gt;&quot;al_get_allegro_version&quot;, &quot;headers&quot;=&gt;[&quot;allegro5/allegro.h&quot;]}</td>
 </tr>
 <tr>
-  <td class="dependency">{&quot;symbol&quot;=&gt;&quot;al_color_name&quot;, &quot;headers&quot;=&gt;[&quot;allegro5/allegro_color.h&quot;]}</td>
+  <td class="dependency">{&quot;symbol&quot;=&gt;&quot;ALLEGRO_DISPLAY*&quot;, &quot;headers&quot;=&gt;[&quot;allegro5/allegro.h&quot;]}</td>
+</tr>
+<tr>
+  <td class="dependency">{&quot;symbol&quot;=&gt;&quot;ALLEGRO_EVENT_QUEUE*&quot;, &quot;headers&quot;=&gt;[&quot;allegro5/allegro.h&quot;]}</td>
+</tr>
+<tr>
+  <td class="dependency">{&quot;symbol&quot;=&gt;&quot;ALLEGRO_TIMER*&quot;, &quot;headers&quot;=&gt;[&quot;allegro5/allegro.h&quot;]}</td>
+</tr>
+<tr>
+  <td class="dependency">{&quot;symbol&quot;=&gt;&quot;Motion&quot;, &quot;headers&quot;=&gt;[&quot;allegro_flare/motion.h&quot;]}</td>
+</tr>
+<tr>
+  <td class="dependency">{&quot;symbol&quot;=&gt;&quot;ALLEGRO_EVENT_SOURCE&quot;, &quot;headers&quot;=&gt;[&quot;allegro5/allegro.h&quot;]}</td>
+</tr>
+<tr>
+  <td class="dependency">{&quot;symbol&quot;=&gt;&quot;ALLEGRO_EVENT&quot;, &quot;headers&quot;=&gt;[&quot;allegro5/allegro.h&quot;]}</td>
+</tr>
+<tr>
+  <td class="dependency">{&quot;symbol&quot;=&gt;&quot;all&quot;, &quot;headers&quot;=&gt;[&quot;iostream&quot;, &quot;sstream&quot;, &quot;algorithm&quot;, &quot;allegro5/allegro.h&quot;, &quot;allegro5/allegro_ttf.h&quot;, &quot;allegro5/allegro_font.h&quot;, &quot;allegro5/allegro_color.h&quot;, &quot;allegro5/allegro_primitives.h&quot;, &quot;allegro5/allegro_image.h&quot;]}</td>
 </tr>
     </table>
   </div>
